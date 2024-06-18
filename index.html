@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Kalorienrechner</title>
+  </head>
+  <body>
+    <div class="calculator">
+        <h2>Kalorienrechner</h2>
+        <section class="form">
+            <label for="größe">Körpergröße</label>
+            <input type="number" name="Körpergröße" id="größe" placeholder="cm" required/>
+
+            <label for="alter">Alter</label>
+            <input type="number" name="Alter" id="alter" placeholder="Jahren" required/>
+
+            <label for="gewicht">Gewicht</label>
+            <input type="number" name="Gewicht" id="gewicht" placeholder="Kg" required/>
+            
+            <div class="gender">
+              <input type="radio" name="gender" id="weiblich" value="weiblich" checked/>
+              <label for="weiblich">weiblich</label>
+              <input type="radio" name="gender" id="männlich" value="männlich"/>
+              <label for="männlich">Männlich</label>
+            </div>
+            
+            <select name="belastung" id="belastung">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit z.B. Büroarbeit</option>
+                <option value="1.7" selected >Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende Fließbandarbeitende, Laborfachkräfte Berufskraftfahrende</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit z.B. Verkäufer:innen, Kellner:innen Handwerker:innen, Mechaniker:innen </option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <button id="submit" type="submit" onclick="calorieCalculator()">Submit</button>
+        </section>
+        <section class="result">
+            <div id="tabHeader">
+                <h4></h4>
+                <h4>Kcal</h4>
+                <h4>KJ</h4>
+            </div>
+            <div class="tab">
+                <h4>Grundumsatz</h4>
+                <h4 id="GrundumsatzKcal"></h4>
+                <h4 id="GrundumsatzKj"></h4>
+            </div>
+            <div class="tab">
+                <h4>Gesamtumsatz</h4>
+                <h4 id="GesamtumsatzKcal"></h4>
+                <h4 id="GesamtumsatzKj"></h4>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./assets/js/scrypt.js"></script>
+  </body>
+</html>

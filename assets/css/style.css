@@ -1,0 +1,91 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: OpenSans;
+    background-color: rgb(238, 238, 238);
+}
+
+.calculator {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculator h2 {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+input,
+select {
+  border: 1px solid rgb(138, 43, 226);
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+}
+
+#männlich {
+  margin-left: 20px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+#submit {
+  border: 1px solid rgb(138, 43, 226);
+  background-color: rgb(138, 43, 226);
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.result div {
+  display: grid;
+  grid-template-columns: 45% 1fr 1fr;
+  gap: 5px;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+#tabHeader {
+  background-color: rgb(138, 43, 226);
+  border-radius: 5px 5px 0 0;
+}
+
+.tab {
+  background-color: rgba(137, 43, 226, 0.577);
+}
+
+.tab:nth-of-type(3) {
+  border-radius: 0 0 5px 5px;
+}
