@@ -81,11 +81,12 @@ input:focus-visible {
   background-color: rgb(138, 43, 226);
   border-radius: 5px 5px 0 0;
   text-align: center;
-  /* padding-right: 20px; */
+
 }
 
 .tab {
   background-color: rgba(137, 43, 226, 0.577);
+  text-align: center;
 }
 
 .tab:nth-of-type(3) {
